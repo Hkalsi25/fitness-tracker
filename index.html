@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In/Sign Up</title>
+  <script type="module" src="firebase.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sign In Form -->
+    <div id="signInForm" class="active">
+      <h2 class="form-title">Sign In</h2>
+      <form>
+        <input type="email" id="signInEmail" placeholder="Email" autocomplete="email" required />
+        <input type="password" id="signInPassword" placeholder="Password" autocomplete="current-password" required />
+        <button type="submit">Log In</button>
+      </form>
+
+      <div class="or">OR</div>
+
+      <div class="icons">
+        <button id="googleSignInButton">
+          <i class="google-icon"></i> Sign In with Google
+        </button>
+      </div>
+
+      <div class="links">
+        <p>Don't have an account? <button id="signUpButton">Sign Up</button></p>
+      </div>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div id="signUpForm" style="display:none;">
+      <h2 class="form-title">Sign Up</h2>
+      <form>
+        <input type="email" id="signUpEmail" placeholder="Email" autocomplete="email" required />
+        <input type="password" id="signUpPassword" placeholder="Password" autocomplete="new-password" required />
+        <button type="submit">Create Account</button>
+      </form>
+
+      <div class="links">
+        <p>Already have an account? <button id="backToSignInButton">Back to Sign In</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

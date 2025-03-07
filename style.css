@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #e0f7fa; /* Light turquoise background */
+    background: linear-gradient(to right, #a5d6a7, #e0f7fa); /* Green gradient background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+    color: #388e3c; /* Dark Green */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #388e3c; /* Green background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #2e7d32; /* Darker Green on hover */
+}
+
+.or {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.icons button {
+    color: #388e3c; /* Green button text */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 2px solid #388e3c;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.icons button:hover {
+    background: #388e3c;
+    color: #ffffff;
+}
+
+.links {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#signUpButton,
+#backToSignInButton {
+    color: #388e3c; /* Green text */
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#signUpButton:hover,
+#backToSignInButton:hover {
+    text-decoration: underline;
+    color: #2e7d32; /* Darker green text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .form-title {
+        font-size: 1.2rem;
+    }
+
+    button, .icons button {
+        font-size: 1rem;
+    }
+}
